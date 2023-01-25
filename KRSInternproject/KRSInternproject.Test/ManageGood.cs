@@ -50,11 +50,22 @@ namespace KRSInternproject.Test
       // Then the Good should be created
       Assert.True(addGood);
     }
-    
-    public void ShouldEditGood()
+
+    /*public void ShouldEditGood()
     {
       //Given a code
-      //When 
+      //When editing the Good
+      // The new Name should exist
+    }*/
+    [Fact]
+    public async Task ShouldFindGood()
+    {
+      // Given a code 
+      var code = "BED12";
+      // When finding the Good by code us AS
+      var findGood = await goodApplicationService.FindGood(code);
+      // The good should be returned
+      Assert.Equal(code, findGood.code);
     }
 
   }

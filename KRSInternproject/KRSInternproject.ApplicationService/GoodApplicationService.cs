@@ -23,5 +23,10 @@ namespace KRSInternproject.ApplicationService
       var valid = _validate.Validate(good);
       return valid.IsValid;
     }
+    public async Task<Good> FindGood(string code)
+    {
+      var good = goods.FirstOrDefault(c => c.code == code);
+      return good;
+    }
   }
 }
