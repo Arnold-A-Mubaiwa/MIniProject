@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KRSInternproject.ApplicationService\KRSInternproject.ApplicationService.csproj" />
     <ProjectReference Include="..\KRSInternproject.Domain\KRSInternproject.Domain.csproj" />
   </ItemGroup>
 

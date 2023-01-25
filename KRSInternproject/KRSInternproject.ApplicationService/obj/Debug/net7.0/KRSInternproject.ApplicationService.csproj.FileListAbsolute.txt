@@ -22,3 +22,6 @@ C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\obj\De
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\refint\KRSInternproject.ApplicationService.dll
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.pdb
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\ref\KRSInternproject.ApplicationService.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\bin\Debug\net7.0\KRSInternproject.Domain.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\bin\Debug\net7.0\KRSInternproject.Domain.pdb
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.csproj.CopyComplete

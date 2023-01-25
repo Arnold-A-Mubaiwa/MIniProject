@@ -1822,6 +1822,20 @@
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "KRSInternproject.ApplicationService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.4.0",
+          "KRSInternproject.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KRSInternproject.ApplicationService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KRSInternproject.ApplicationService.dll": {}
+        }
+      },
       "KRSInternproject.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -6153,6 +6167,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "KRSInternproject.ApplicationService/1.0.0": {
+      "type": "project",
+      "path": "../KRSInternproject.ApplicationService/KRSInternproject.ApplicationService.csproj",
+      "msbuildProject": "../KRSInternproject.ApplicationService/KRSInternproject.ApplicationService.csproj"
+    },
     "KRSInternproject.Domain/1.0.0": {
       "type": "project",
       "path": "../KRSInternproject.Domain/KRSInternproject.Domain.csproj",
@@ -6162,6 +6181,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "FluentValidation >= 11.4.0",
+      "KRSInternproject.ApplicationService >= 1.0.0",
       "KRSInternproject.Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "coverlet.collector >= 3.1.2",
@@ -6196,6 +6216,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj": {
+              "projectPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj"
+            },
             "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj": {
               "projectPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj"
             }

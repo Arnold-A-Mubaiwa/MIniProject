@@ -1,3 +1,4 @@
+using KRSInternproject.ApplicationService;
 using KRSInternproject.Domain;
 
 namespace KRSInternproject.Test
@@ -5,6 +6,7 @@ namespace KRSInternproject.Test
   public class ManageGood
   {
     private readonly GoodValidator _validator = new();
+    GoodApplicationService goodApplicationService = new();
     [Fact]
     public void ShouldCreateAGood()
     {
@@ -36,7 +38,17 @@ namespace KRSInternproject.Test
       // Then the Good should not validate
       Assert.False(validGood.IsValid);
     }
-    
+
+    [Fact]
+    public void ShouldAddGood()
+    {
+      // Given a good code and name
+      var good = new Good("ABCDE", "Alphabet");
+      // When adding a good
+      var addGood = goodApplicationService.AddGood(good);
+      // Then the Good should be created
+      Assert.True(addGood);
+    }
 
   }
 }
