@@ -24,7 +24,7 @@ namespace KRSInternproject.Test
       // When validating the good 
       var validGood = _validator.Validate(good);
       // Then the Good should validate
-      Assert.False(validGood.IsValid);
+      Assert.True(validGood.IsValid);
     }
     
 
