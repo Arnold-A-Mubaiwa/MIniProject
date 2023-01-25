@@ -57,6 +57,7 @@ namespace KRSInternproject.Test
       //When editing the Good
       // The new Name should exist
     }*/
+
     [Fact]
     public async Task ShouldFindGood()
     {
@@ -68,5 +69,15 @@ namespace KRSInternproject.Test
       Assert.Equal(code, findGood.code);
     }
 
+    [Fact]
+    public async Task ShouldNotFindGood()
+    {
+      // Given a code 
+      var code = "BED13";
+      // When finding the Good by code us AS
+      var findGood = await goodApplicationService.FindGood(code);
+      // The good shouldn't be returned
+      Assert.Null(findGood);
+    }
   }
 }
