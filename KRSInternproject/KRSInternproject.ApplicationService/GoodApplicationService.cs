@@ -45,5 +45,13 @@ namespace KRSInternproject.ApplicationService
       goods.RemoveAll(e=> e.code == code);
       return true;
     }
+
+    public async Task<bool> CheckDuplicate(Good good)
+    {
+      var found = await FindGood(good.code);
+      if (found == null) return false;
+      return true;
+    }
+    
   }
 }
