@@ -61,7 +61,7 @@ namespace KRSInternproject.Test
     public async Task ShouldFindGood()
     {
       // Given a code 
-      var code = "BED14";
+      var code = "BED12";
       // When finding the Good by code us AS
       var findGood = await goodApplicationService.FindGood(code);
       // The good should be returned
