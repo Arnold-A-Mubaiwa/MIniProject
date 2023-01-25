@@ -203,3 +203,5 @@ C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\obj\Debug\net7.0\ref
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\obj\Debug\net7.0\KRSInternproject.Test.pdb
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\obj\Debug\net7.0\KRSInternproject.Test.genruntimeconfig.cache
 C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\obj\Debug\net7.0\ref\KRSInternproject.Test.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\bin\Debug\net7.0\KRSInternproject.ApplicationService.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Test\bin\Debug\net7.0\KRSInternproject.ApplicationService.pdb
