@@ -79,5 +79,20 @@ namespace KRSInternproject.Test
       // The good shouldn't be returned
       Assert.Null(findGood);
     }
+
+    [Fact]
+    public async Task ShouldEditGood()
+    {
+      // Given a code  and new name
+      var code = "BED12";
+      var name = "New Name";
+      // When editing the good by code
+      var newGood = await goodApplicationService.EditGood(code, name);
+      // Then the good should be edited
+      Assert.True(newGood);
+      var findGood = await goodApplicationService.FindGood(code);
+      // The good should be returned
+      Assert.Equal(name, findGood.name);
+    }
   }
 }

@@ -28,5 +28,14 @@ namespace KRSInternproject.ApplicationService
       var good = goods.FirstOrDefault(c => c.code == code);
       return good;
     }
+    public async Task<bool> EditGood(string code, string name)
+    {
+      var newgood = new Good(code, name);
+      var good = await FindGood(code);
+      if (good == null) return false;
+
+      goods =  goods.Select(g => g.code == code? newgood:g).ToList();
+      return true;
+    }
   }
 }
