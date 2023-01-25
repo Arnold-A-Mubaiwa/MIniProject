@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
+      "projectUniqueName": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
       "projectName": "KRSInternproject.ApplicationService",
-      "projectPath": "C:\\repos\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
+      "projectPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\KRSInternproject\\KRSInternproject.ApplicationService\\obj\\",
+      "outputPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

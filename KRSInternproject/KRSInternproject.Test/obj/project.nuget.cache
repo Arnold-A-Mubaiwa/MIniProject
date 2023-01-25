@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k7dXDSLWZOC20hooC0MLUn4illURnMVz5ceA80zprHcquSvk5vOrsDV8hcVaedaw4ydPfv19TKGK7dg0jAU56A==",
+  "dgSpecHash": "R4tvxanUM3fFjfArU01+sGZPjKVI+/1NdWBYpb8PZ2ire8FNsXmBCYg+Wc/SW/jZldl7DLx5QKsy7csgwbQpNA==",
   "success": true,
-  "projectFilePath": "C:\\repos\\KRSInternproject\\KRSInternproject.Test\\KRSInternproject.Test.csproj",
+  "projectFilePath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Test\\KRSInternproject.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",

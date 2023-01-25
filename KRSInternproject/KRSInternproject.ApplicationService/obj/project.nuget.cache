@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "woaliBi0fShS7mXOA0X5mcNIYx6kQTuG/ymmzSNfJyAGGpV3NNfQPSRPVtK0L2J01oH5otE9R865g+5kjcvdDA==",
+  "dgSpecHash": "W20HGKQ+a/VFndzsOqBCWviE//+F5hPREhLp5zSDIqC2cf7qd9gN4BTL91cZsOAgCtCOS7hVW04WWJ9s1h8loA==",
   "success": true,
-  "projectFilePath": "C:\\repos\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
+  "projectFilePath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.ApplicationService\\KRSInternproject.ApplicationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512"
   ],

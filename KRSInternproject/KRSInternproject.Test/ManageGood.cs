@@ -20,10 +20,11 @@ namespace KRSInternproject.Test
     public void ShouldValidateGood()
     {
       // Given a good 
-
+      var good = new Good("DANC1", "Dance marks");
       // When validating the good 
-
+      var validGood = _validator.Validate(good);
       // Then the Good should validate
+      Assert.False(validGood.IsValid);
     }
     
 
