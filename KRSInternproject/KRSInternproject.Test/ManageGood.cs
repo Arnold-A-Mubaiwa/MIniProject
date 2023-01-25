@@ -9,10 +9,8 @@ namespace KRSInternproject.Test
     public void ShouldCreateAGood()
     {
       // Given a code and name
-      var code = "ABCDE";
-      var name = "Arnold";
       // When creating a good
-      var good = new Good(code, name);
+      var good = new Good("ABCDE", "Arnold");
       // Then the Good should be created
       Assert.NotNull(good);
     }
