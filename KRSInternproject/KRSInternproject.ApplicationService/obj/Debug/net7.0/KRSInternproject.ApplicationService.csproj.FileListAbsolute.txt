@@ -1,0 +1,12 @@
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\bin\Debug\net7.0\KRSInternproject.ApplicationService.deps.json
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\bin\Debug\net7.0\KRSInternproject.ApplicationService.dll
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\bin\Debug\net7.0\KRSInternproject.ApplicationService.pdb
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.csproj.AssemblyReference.cache
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.AssemblyInfoInputs.cache
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.AssemblyInfo.cs
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.csproj.CoreCompileInputs.cache
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.dll
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\refint\KRSInternproject.ApplicationService.dll
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\KRSInternproject.ApplicationService.pdb
+C:\repos\KRSInternproject\KRSInternproject.ApplicationService\obj\Debug\net7.0\ref\KRSInternproject.ApplicationService.dll
