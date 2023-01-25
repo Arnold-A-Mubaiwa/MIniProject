@@ -99,5 +99,16 @@ namespace KRSInternproject.Test
       Assert.Null(findGood);
 
     }
+
+    [Fact]
+    public async Task ShouldCheckDuplicateGood()
+    {
+      // Given a an existing Good
+      var good = new Good("PHO12", "Huawei Pro");
+      // When checking for duplicate
+      var isDuplicate = await goodApplicationService.CheckDuplicate(good);
+      // Then the duplicate should be found(exist)
+      Assert.True(isDuplicate);
+    }
   }
 }
