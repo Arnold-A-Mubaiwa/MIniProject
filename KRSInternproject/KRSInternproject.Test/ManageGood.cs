@@ -1,6 +1,5 @@
 using KRSInternproject.ApplicationService;
 using KRSInternproject.Domain;
-using System.ComponentModel.DataAnnotations;
 
 namespace KRSInternproject.Test
 {
@@ -84,12 +83,11 @@ namespace KRSInternproject.Test
       // Then the good should be edited
       Assert.True(newGood);
       var findGood = await goodApplicationService.FindGood(code);
-      // The good should be returned
       Assert.Equal(name, findGood.name);
     }
 
     [Fact] 
-    public async Task SShouldDeleteGood()
+    public async Task ShouldDeleteGood()
     {
       // Given the existing code of the good to be deleted
       var code = "BED12";
