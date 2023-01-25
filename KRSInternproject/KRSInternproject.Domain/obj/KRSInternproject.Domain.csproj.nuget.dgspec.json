@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj": {}
+    "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj": {}
   },
   "projects": {
-    "C:\\repos\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj": {
+    "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj",
+        "projectUniqueName": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj",
         "projectName": "KRSInternproject.Domain",
-        "projectPath": "C:\\repos\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj",
+        "projectPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\KRSInternproject.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\KRSInternproject\\KRSInternproject.Domain\\obj\\",
+        "outputPath": "C:\\repos\\MIniProject\\KRSInternproject\\KRSInternproject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

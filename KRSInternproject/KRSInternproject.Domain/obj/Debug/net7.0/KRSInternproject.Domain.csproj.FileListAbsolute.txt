@@ -10,3 +10,15 @@ C:\repos\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproj
 C:\repos\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\refint\KRSInternproject.Domain.dll
 C:\repos\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.pdb
 C:\repos\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\ref\KRSInternproject.Domain.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\bin\Debug\net7.0\KRSInternproject.Domain.deps.json
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\bin\Debug\net7.0\KRSInternproject.Domain.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\bin\Debug\net7.0\KRSInternproject.Domain.pdb
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.csproj.AssemblyReference.cache
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.AssemblyInfoInputs.cache
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.AssemblyInfo.cs
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.csproj.CoreCompileInputs.cache
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\refint\KRSInternproject.Domain.dll
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\KRSInternproject.Domain.pdb
+C:\repos\MIniProject\KRSInternproject\KRSInternproject.Domain\obj\Debug\net7.0\ref\KRSInternproject.Domain.dll
