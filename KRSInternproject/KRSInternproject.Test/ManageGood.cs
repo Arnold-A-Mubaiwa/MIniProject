@@ -1,5 +1,6 @@
 using KRSInternproject.ApplicationService;
 using KRSInternproject.Domain;
+using System.ComponentModel.DataAnnotations;
 
 namespace KRSInternproject.Test
 {
@@ -40,14 +41,20 @@ namespace KRSInternproject.Test
     }
 
     [Fact]
-    public void ShouldAddGood()
+    public async Task ShouldAddGood()
     {
       // Given a good code and name
       var good = new Good("ABCDE", "Alphabet");
       // When adding a good
-      var addGood = goodApplicationService.AddGood(good);
+      var addGood = await goodApplicationService.AddGood(good);
       // Then the Good should be created
       Assert.True(addGood);
+    }
+    
+    public void ShouldEditGood()
+    {
+      //Given a code
+      //When 
     }
 
   }
