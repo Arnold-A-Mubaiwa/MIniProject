@@ -48,7 +48,9 @@ namespace KRSInternproject.ApplicationService
 
     public async Task<bool> CheckDuplicate(Good good)
     {
-      return false;
+      var found = await FindGood(good.code);
+      if (found == null) return false;
+      return true;
     }
     
   }
