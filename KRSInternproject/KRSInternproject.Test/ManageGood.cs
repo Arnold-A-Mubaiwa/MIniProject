@@ -14,6 +14,7 @@ namespace KRSInternproject.Test
       // Then the Good should be created
       Assert.NotNull(good);
     }
+
     [Fact]
     public void ShouldValidateGood()
     {
@@ -23,6 +24,17 @@ namespace KRSInternproject.Test
       var validGood = _validator.Validate(good);
       // Then the Good should validate
       Assert.True(validGood.IsValid);
+    }
+
+    [Fact]
+    public void ShouldValidateAnInvalidGood()
+    {
+      // Given a invalid Good
+      var good = new Good("DANC", "Dance Naps");
+      // When validating the good
+      var invalidGood = _validator.Validate(good);
+      // Then the Good should not validate
+      Assert.True(invalidGood.IsValid);
     }
     
 
