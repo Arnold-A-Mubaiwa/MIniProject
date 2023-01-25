@@ -12,7 +12,7 @@ namespace KRSInternproject.ApplicationService
     };
     public async Task<bool> AddGood(Good good)
     {
-      if (!await ValidateGood(good)) return false;
+      if (!await ValidateGood(good)||await CheckDuplicate(good)) return false;
         
       goods.Add(good);
       return true;
