@@ -1,6 +1,5 @@
 using KRSInternproject.ApplicationService;
 using KRSInternproject.Domain;
-using System.ComponentModel.DataAnnotations;
 
 namespace KRSInternproject.Test
 {
@@ -51,13 +50,6 @@ namespace KRSInternproject.Test
       Assert.True(addGood);
     }
 
-    /*public void ShouldEditGood()
-    {
-      //Given a code
-      //When editing the Good
-      // The new Name should exist
-    }*/
-
     [Fact]
     public async Task ShouldFindGood()
     {
@@ -91,8 +83,21 @@ namespace KRSInternproject.Test
       // Then the good should be edited
       Assert.True(newGood);
       var findGood = await goodApplicationService.FindGood(code);
-      // The good should be returned
       Assert.Equal(name, findGood.name);
+    }
+
+    [Fact] 
+    public async Task ShouldDeleteGood()
+    {
+      // Given the existing code of the good to be deleted
+      var code = "BED12";
+      // When deleting the good
+      var deleteGood = await goodApplicationService.DeleteGood(code);
+      // the good should be deleted
+      Assert.True(deleteGood);
+      var findGood = await goodApplicationService.FindGood(code);
+      Assert.Null(findGood);
+
     }
   }
 }

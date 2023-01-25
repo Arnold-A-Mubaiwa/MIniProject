@@ -37,5 +37,13 @@ namespace KRSInternproject.ApplicationService
       goods =  goods.Select(g => g.code == code? newgood:g).ToList();
       return true;
     }
+    public async Task<bool> DeleteGood(string code)
+    {
+      var good = await FindGood(code);
+      if (good == null) return false;
+
+      goods.RemoveAll(e=> e.code == code);
+      return true;
+    }
   }
 }
