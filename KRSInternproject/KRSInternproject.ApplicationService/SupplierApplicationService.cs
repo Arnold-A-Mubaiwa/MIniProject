@@ -13,7 +13,7 @@ namespace KRSInternproject.ApplicationService
   };
     public async Task<bool> AddSupplier(Supplier supplier)
     {
-      if ( await FindSupplier(supplier.Code)!=null || !validateSupplier(supplier)) return false;
+      if ( await CheckDuplicate(supplier) || !validateSupplier(supplier)) return false;
       _suppliers.Add(supplier);
       return true;
     }
@@ -42,6 +42,11 @@ namespace KRSInternproject.ApplicationService
       if (await FindSupplier(supplier.Code) == null) return false;
 
       _suppliers.Remove(supplier);
+      return true;
+    }
+    public async Task<bool> CheckDuplicate(Supplier supplier)
+    {
+      if (await FindSupplier(supplier.Code) == null) return false;
       return true;
     }
   }
