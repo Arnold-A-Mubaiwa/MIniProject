@@ -106,5 +106,16 @@ namespace KRSInternproject.Test
       Assert.True(deleteSupploier);
       Assert.Null(findDeletedSupplier);
     }
+
+    [Fact]
+    public async Task CheckDuplicate()
+    {
+      // Given a new supplier but a duplicate
+      var supplier = new Supplier("ARNO2", "Anotida Mubaiwa", 2);
+      // When checking if it is a duplicate before
+      var checkIfDuplicate = await _supplierApplicationService.CheckDuplicate(supplier);
+      // Then the AS should return true
+      Assert.True(checkIfDuplicate);
+    }
   }
 }
