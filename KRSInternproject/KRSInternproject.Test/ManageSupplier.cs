@@ -44,7 +44,7 @@ namespace KRSInternproject.Test
     public async Task ShouldAddSupplier()
     {
       // Given a new SSupplier 
-      var supplier = new Supplier("ARNO3", "Arnold", 2);
+      var supplier = new Supplier("ARNOq", "Arnold", 2);
       // When adding the new supplier
       var findSupplier = await _supplierApplicationService.FindSupplier(supplier.Code);
       Assert.Null(findSupplier);
