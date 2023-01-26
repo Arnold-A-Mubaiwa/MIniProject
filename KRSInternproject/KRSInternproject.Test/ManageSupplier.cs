@@ -44,18 +44,22 @@ namespace KRSInternproject.Test
     public async Task ShouldAddSupplier()
     {
       // Given a new SSupplier 
-      var supplier = new Supplier("ARNO", "Arnold", 2);
+      var supplier = new Supplier("ARNO3", "Arnold", 2);
       // When adding the new supplier
+      var findSupplier = await _supplierApplicationService.FindSupplier(supplier.Code);
+      Assert.Null(findSupplier);
       var addNewSupplier = await _supplierApplicationService.AddSupplier(supplier);
       // Then the supplier should be added
       Assert.True(addNewSupplier);
+      var findSupplierAfterAdding = await _supplierApplicationService.FindSupplier(supplier.Code);
+      Assert.NotNull(findSupplierAfterAdding);
     }
 
     [Fact]
     public async Task ShouldFindSupplier()
     {
       // Given a supplier code
-      var code = "ARNO";
+      var code = "ARNO1";
       // When finding a supplier with a code
       var findSupplier = await _supplierApplicationService.FindSupplier(code);
       // Then should find the supplier
@@ -67,7 +71,7 @@ namespace KRSInternproject.Test
     public async Task ShouldNotFindInvalidSupplier()
     {
       // Given an invalid code
-      var code = "ARNO1";
+      var code = "ARNO";
       // When finding a supplier with a code
       var findSupplier = await _supplierApplicationService.FindSupplier(code);
       // Then the supplier shouldn't be founf

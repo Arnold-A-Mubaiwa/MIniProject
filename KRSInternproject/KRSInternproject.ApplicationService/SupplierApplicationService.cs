@@ -11,6 +11,7 @@ namespace KRSInternproject.ApplicationService
     };
     public async Task<bool> AddSupplier(Supplier supplier)
     {
+      if ( await FindSupplier(supplier.Code)!=null) return false;
       _suppliers.Add(supplier);
       return true;
     }
@@ -19,5 +20,7 @@ namespace KRSInternproject.ApplicationService
     {
       return _suppliers.FirstOrDefault(s => s.Code == code)!;
     }
+
+
   }
 }
