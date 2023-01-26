@@ -9,7 +9,8 @@ namespace KRSInternproject.ApplicationService
     private List<Supplier> _suppliers  = new List<Supplier>()
     {
       new Supplier("ARNO1", "Arnold", 1),
-    };
+      new Supplier("ARNO2", "Anotida Mubaiwa", 2),
+  };
     public async Task<bool> AddSupplier(Supplier supplier)
     {
       if ( await FindSupplier(supplier.Code)!=null || !validateSupplier(supplier)) return false;
@@ -38,7 +39,10 @@ namespace KRSInternproject.ApplicationService
 
     public async Task<bool> DeleteSupplier(Supplier  supplier)
     {
-      return false;
+      if (await FindSupplier(supplier.Code) == null) return false;
+
+      _suppliers.Remove(supplier);
+      return true;
     }
   }
 }
