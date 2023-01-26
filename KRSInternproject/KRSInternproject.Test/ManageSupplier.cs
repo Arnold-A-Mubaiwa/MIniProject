@@ -77,5 +77,16 @@ namespace KRSInternproject.Test
       // Then the supplier shouldn't be founf
       Assert.Null(findSupplier);
     }
+
+    [Fact]
+    public async Task ShouldEditSupplier()
+    {
+      //Given an existing supplier 
+      var supplier = new Supplier("ARNO1", "Anotida", 6);
+      // When edidting the supplier then 
+      var editSupplier = await _supplierApplicationService.EditSupplier(supplier);
+      // Then the supplier should be edited
+      Assert.True(editSupplier);
+    }
   }
 }
