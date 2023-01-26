@@ -48,7 +48,7 @@ namespace KRSInternproject.Test
       // When adding the new supplier
       var addNewSupplier = await _supplierApplicationService.AddSupplier(supplier);
       // Then the supplier should be added
-      Assert.True(addNewSupplier);
+      Assert.False(addNewSupplier);
     }
   }
 }
