@@ -27,9 +27,13 @@ namespace KRSInternproject.ApplicationService
       var validate = _validator.Validate(supplier);
       return (validate.IsValid)? true: false;
     }
-    public async Task<bool> EditSupplier()
+    public async Task<bool> EditSupplier(Supplier supplier)
     {
-      return false;
+      var findSupplier = await FindSupplier(supplier.Code);
+      if (findSupplier == null || !validateSupplier(supplier)) return false;
+      
+      _suppliers = _suppliers.Select(s => s.Code == findSupplier.Code ? supplier : s).ToList();
+      return true;
     }
 
   }

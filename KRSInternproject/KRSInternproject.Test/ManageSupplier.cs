@@ -86,7 +86,9 @@ namespace KRSInternproject.Test
       // When edidting the supplier then 
       var editSupplier = await _supplierApplicationService.EditSupplier(supplier);
       // Then the supplier should be edited
+      var findEditedSupplier = await _supplierApplicationService.FindSupplier(supplier.Code);
       Assert.True(editSupplier);
+      Assert.Equal(supplier.Code, findEditedSupplier.Code);
     }
   }
 }
