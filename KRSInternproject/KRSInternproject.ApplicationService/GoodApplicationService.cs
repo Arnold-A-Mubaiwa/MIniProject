@@ -12,7 +12,7 @@ namespace KRSInternproject.ApplicationService
     };
     public async Task<bool> AddGood(Good good)
     {
-      if (!await ValidateGood(good)) return false;
+      if (!await ValidateGood(good)||await CheckDuplicate(good)) return false;
         
       goods.Add(good);
       return true;
@@ -25,8 +25,7 @@ namespace KRSInternproject.ApplicationService
     }
     public async Task<Good> FindGood(string code)
     {
-      var good = goods.FirstOrDefault(c => c.code == code);
-      return good;
+      return goods.FirstOrDefault(c => c.code == code)!;
     }
     public async Task<bool> EditGood(string code, string name)
     {
