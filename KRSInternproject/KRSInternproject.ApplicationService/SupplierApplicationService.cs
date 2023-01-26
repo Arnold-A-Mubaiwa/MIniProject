@@ -4,10 +4,20 @@ namespace KRSInternproject.ApplicationService
 {
   public class SupplierApplicationService
   {
-  public async Task<bool> AddSupplier(Supplier supplier)
+
+    private List<Supplier> _suppliers  = new List<Supplier>()
     {
-      return false;
+      new Supplier("ARNO1", "Arnold", 1),
+    };
+    public async Task<bool> AddSupplier(Supplier supplier)
+    {
+      _suppliers.Add(supplier);
+      return true;
     }
 
+    public async Task<Supplier> FindSupplier(string code)
+    {
+      return _suppliers.FirstOrDefault(s => s.Code == code)!;
+    }
   }
 }

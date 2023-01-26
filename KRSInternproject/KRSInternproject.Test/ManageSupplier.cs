@@ -48,7 +48,30 @@ namespace KRSInternproject.Test
       // When adding the new supplier
       var addNewSupplier = await _supplierApplicationService.AddSupplier(supplier);
       // Then the supplier should be added
-      Assert.False(addNewSupplier);
+      Assert.True(addNewSupplier);
+    }
+
+    [Fact]
+    public async Task ShouldFindSupplier()
+    {
+      // Given a supplier code
+      var code = "ARNO";
+      // When finding a supplier with a code
+      var findSupplier = await _supplierApplicationService.FindSupplier(code);
+      // Then should find the supplier
+      Assert.NotNull(findSupplier);
+      Assert.Equal(code, findSupplier.Code);
+    }
+
+    [Fact]
+    public async Task ShouldNotFindInvalidSupplier()
+    {
+      // Given an invalid code
+      var code = "ARNO1";
+      // When finding a supplier with a code
+      var findSupplier = await _supplierApplicationService.FindSupplier(code);
+      // Then the supplier shouldn't be founf
+      Assert.Null(findSupplier);
     }
   }
 }
