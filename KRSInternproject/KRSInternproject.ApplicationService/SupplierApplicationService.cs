@@ -36,5 +36,9 @@ namespace KRSInternproject.ApplicationService
       return true;
     }
 
+    public async Task<bool> DeleteSupplier(Supplier  supplier)
+    {
+      return false;
+    }
   }
 }

@@ -90,5 +90,21 @@ namespace KRSInternproject.Test
       Assert.True(editSupplier);
       Assert.Equal(supplier.Code, findEditedSupplier.Code);
     }
+
+    [Fact]
+    public async Task ShouldDeleteSupplier()
+    {
+      //Give an existing supplier
+      var supplier = new Supplier("ARNO2", "Anotida Mubaiwa", 2);
+      //When deleting the supplier from the AS list
+      var findSupplier = await _supplierApplicationService.FindSupplier(supplier.Code);
+      var deleteSupploier = await _supplierApplicationService.DeleteSupplier(findSupplier);
+      var findDeletedSupplier = await _supplierApplicationService.FindSupplier(supplier.Code);
+
+      //Then supplier the supplier should be removed
+      Assert.NotNull(findSupplier);
+      Assert.True(deleteSupploier);
+      Assert.Null(findDeletedSupplier);
+    }
   }
 }
