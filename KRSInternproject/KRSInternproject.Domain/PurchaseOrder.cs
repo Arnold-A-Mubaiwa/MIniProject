@@ -10,8 +10,9 @@ namespace KRSInternproject.Domain
     private List<Item> _items { get; set; } = new();
     public IEnumerable<Item> Items  => _items;
 
-    public PurchaseOrder(Supplier supplier, List<Item> items)
+    public PurchaseOrder(int number, Supplier supplier, List<Item> items)
     {
+      Number = number;
       _items = items;
       OrderDate = DateTime.Now;
       this.supplier = supplier;
