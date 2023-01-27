@@ -32,5 +32,22 @@ namespace KRSInternproject.Test
       Assert.Equal(number, findPurchaseOrder.Number);
     }
 
+    [Fact]
+    public async Task ShouldAddToPurchaseOrder()
+    {
+      // Given a new purchase order
+      var supplier = new Supplier("ABCD2", "Arnold", 3);
+      var good = new Good("GOOD2", "My good");
+      var item = new Item(good, 2, 50.23m);
+      var item2 = new Item(good, 2, 50.23m);
+      var purchaseOrder = new PurchaseOrder(112, supplier, new List<Item>() { item, item2 });
+      // When adding the purchase order
+      var addPurchase = await _service.AddPurchaseOrder(purchaseOrder);
+      var findAfterAdd = await _service.FindPurchaseOrder(purchaseOrder.Number);
+      // Then the purchase order should be added
+      Assert.True(addPurchase);
+      Assert.Equal(purchaseOrder.Number, findAfterAdd.Number);
+
+    }
   }
 }

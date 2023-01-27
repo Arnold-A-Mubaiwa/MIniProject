@@ -15,5 +15,13 @@ namespace KRSInternproject.ApplicationService
       return _purchaseOrder.FirstOrDefault(s => s.Number == number)!;
     }
 
+    public async Task<bool> AddPurchaseOrder(PurchaseOrder purchaseOrder)
+    {
+      var findOrder = await FindPurchaseOrder(purchaseOrder.Number);
+      if (findOrder != null) return false;
+
+      _purchaseOrder.Add(purchaseOrder);
+      return true;
+    }
   }
 }
