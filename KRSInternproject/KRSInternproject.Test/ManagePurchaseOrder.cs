@@ -1,10 +1,12 @@
 ﻿
+using KRSInternproject.ApplicationService;
 using KRSInternproject.Domain;
 
 namespace KRSInternproject.Test
 {
   public class ManagePurchaseOrder
   {
+    private readonly PurchaseOrderApplicationService _service = new();
     [Fact]
      public void ShouldCreatePurchaseOrder()
     {
@@ -17,5 +19,18 @@ namespace KRSInternproject.Test
       // Then the purchase order should be created
       Assert.NotNull(order);
     }
+
+    [Fact]
+    public async Task ShouldFindPurchaseOrder()
+    {
+      // Given an existing purchase order number
+      var number = 111;
+      // When finding the purchase order
+      var findPurchaseOrder = await _service.FindPurchaseOrder(number);
+      // Then the purchase oder should be found
+      Assert.NotNull(findPurchaseOrder);
+      Assert.Equal(number, findPurchaseOrder.Number);
+    }
+
   }
 }
