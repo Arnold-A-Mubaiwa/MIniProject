@@ -17,5 +17,9 @@ namespace KRSInternproject.Domain
       OrderDate = DateTime.Now;
       this.supplier = supplier;
     }
+    public void AddItem(Item item)
+    {
+      _items.Add(item);
+    }
   }
 }
